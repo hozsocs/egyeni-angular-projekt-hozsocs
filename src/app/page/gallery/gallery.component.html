@@ -1,0 +1,30 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Filename</th>
+      <th>Path</th>
+      <th>Period</th>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Featured</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let gallery of galleryList$ | async">
+      <td>{{ gallery.id }}</td>
+      <td>{{ gallery.filename }}</td>
+      <td>{{ gallery.path }}</td>
+      <td>{{ gallery.period }}</td>
+      <td>{{ gallery.title }}</td>
+      <td>{{ gallery.date }}</td>
+      <td>{{ gallery.description }}</td>
+      <td>{{ gallery.featured }}</td>
+
+      //ide jön a törlés és egyéb gombok//
+    </tr>
+  </tbody>
+</table>
