@@ -1,27 +1,17 @@
-# MuviskGallery
+# MuviskGallery indítása:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+JSON szervert használok: json-server gallery1\output.json --watch
+Az angular projekt az npm start paranccsal lehet indítani.
 
-## Development server
+## A projekt leírása
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ebben a projektben egy valós felmerült igényt próbálok meg feldolgozni, amelyben egy művészeti iskola évek óta felgyűlt képanyagát rendszerezem és teszem szerkeszthetővé.
 
-## Code scaffolding
+A feldolgozás során első sorban a feladat leírás paramétereit követtem, de terveim szerint néhány változtatással a valóságbanis integrálható lesz, az intézmény honlapjába.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Fontos elérendő cél volt a főoldalán található összefoglaló, az elérhető tanévekről, amelyből
+közvetlenül megnyithatóak az adott tanév képei. A galéria oldalról illetve a tanévekre szűrt aloldalakról bármely képre kattintva a szerkesztő ablakba lépve lehet szerkeszteni az adott kép elemeit!
 
-## Build
+Az összes rendelkezésre álló adat adatbázisba szervezése után több ezer rekord keletkezett, amelyeket egyelőre benne hagytam, a komplexebb kép kipróbálása miatt. Néhány helyen ezek miatt lassú lett az adatok megjelenése, amelyet a későbbiekben orvosolni kell.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+A projekt létrehozásához Bootstrap 5 formázásokat használtam.

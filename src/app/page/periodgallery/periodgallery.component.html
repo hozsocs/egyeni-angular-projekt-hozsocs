@@ -1,0 +1,22 @@
+<h1>A {{ searchPeriod }} tanév képei</h1>
+<div class="row">
+  <pagination-controls
+    class="text-center col-12"
+    (pageChange)="p = $event"
+  ></pagination-controls>
+  <div
+    class="col-12 col-md-4 col-lg-3"
+    *ngFor="
+      let gallery of galleryList$
+        | async
+        | featured: searchPeriod
+        | globalfilter: (phrase$ | async)
+        | paginate: { itemsPerPage: 8, currentPage: p }
+    "
+  >
+    <app-gallery-card
+      [gallery]="gallery"
+      (onSelect)="onEdit($event)"
+    ></app-gallery-card>
+  </div>
+</div>

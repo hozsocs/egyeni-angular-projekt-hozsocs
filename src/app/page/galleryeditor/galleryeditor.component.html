@@ -1,0 +1,66 @@
+<h1>Galéria elem szerkesztése</h1>
+
+<div class="row mt-3" *ngIf="gallery">
+  <div class="col-12">
+    <form
+      [formGroup]="galleryFormGroup"
+      (ngSubmit)="onUpdate()"
+      style="max-width: 400px"
+      class="mx-auto"
+    >
+      <div class="card px-0 movieCard col-sm-12-md-6-lg-2 mx-auto">
+        <img
+          class="card-img-top"
+          style="height: 250px"
+          [src]="gallery.path + gallery.filename"
+          alt="Card image cap"
+        />
+      </div>
+      <div *ngFor="let field of fields" class="form-group">
+        <label>{{ field.label }}</label>
+        <ng-container [ngSwitch]="field.type">
+          <select
+            *ngSwitchCase="'select'"
+            [formControlName]="field.key"
+            [name]="field.key"
+            class="form-control"
+          >
+            <option *ngFor="let opt of field.options" [value]="opt.value">
+              {{ opt.text }}
+            </option>
+          </select>
+          <textarea
+            *ngSwitchCase="'textarea'"
+            [formControlName]="field.key"
+            [name]="field.key"
+            class="form-control"
+          >
+          </textarea>
+          <input
+            *ngSwitchDefault
+            [formControlName]="field.key"
+            [name]="field.key"
+            [type]="field.type || 'text'"
+            class="form-control"
+          />
+        </ng-container>
+        <div
+          *ngIf="galleryFormGroup.controls[field.key].invalid"
+          class="error-message error"
+        >
+          {{ field.validateMessage }}
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-3">
+        <button
+          [disabled]="galleryFormGroup.invalid"
+          class="btn btn-primary"
+          type="submit"
+        >
+          <i class="fa fa-save" *ngIf=""></i> update user
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

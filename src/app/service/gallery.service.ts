@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { GalleryItem } from '../model/gallery-item';
@@ -7,37 +7,40 @@ import { GalleryItem } from '../model/gallery-item';
 @Injectable({
   providedIn: 'root',
 })
+
+//A BaseService kiterjesztése
 export class GalleryService {
-  apiUrl: string = environment.apiUrl;
-
+  //felül kell írni a BaseService változóját
   entityName: string = '';
+  apiUrl: string = environment.apiUrl;
+  http: HttpClient = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   getAll(): Observable<GalleryItem[]> {
-    return this.http.get<GalleryItem[]>(`${this.apiUrl}${this.entityName}`);
+    return this.http.get<GalleryItem[]>(`${this.apiUrl}`);
   }
 
   get(id: number): Observable<GalleryItem> {
     return this.http.get<GalleryItem>(`${this.apiUrl}${this.entityName}/${id}`);
   }
 
-  create(drug: GalleryItem): Observable<GalleryItem> {
+  create(gallery: GalleryItem): Observable<GalleryItem> {
     return this.http.post<GalleryItem>(
       `${this.apiUrl}${this.entityName}`,
-      drug
+      gallery
     );
   }
 
-  update(drug: GalleryItem): Observable<GalleryItem> {
+  update(gallery: GalleryItem): Observable<GalleryItem> {
     return this.http.patch<GalleryItem>(
-      `${this.apiUrl}${this.entityName}/${drug.id}`,
-      drug
+      `${this.apiUrl}${this.entityName}/${gallery.id}`,
+      gallery
     );
   }
-  delete(drug: GalleryItem): Observable<GalleryItem> {
+  delete(gallery: GalleryItem): Observable<GalleryItem> {
     return this.http.delete<GalleryItem>(
-      `${this.apiUrl}${this.entityName}/${drug.id}`
+      `${this.apiUrl}${this.entityName}/${gallery.id}`
     );
   }
 }

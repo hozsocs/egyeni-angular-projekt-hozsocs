@@ -1,1 +1,51 @@
-<p>home works!</p>
+<H1>Iskolai galéria oldal</H1>
+
+<div class="col-12 text-justify my-3 pb-3">
+  <h2>A téma bemutatása</h2>
+  <p>
+    Ebben a projektben egy valós felmerült igényt próbálok meg feldolgozni,
+    amelyben egy művészeti iskola évek óta felgyűlt képanyagát rendszerezem és
+    teszem szerkeszthetővé. A feldolgozás során első sorban a feladat leírás
+    paramétereit követtem, de terveim szerint néhány változtatással a valóságban
+    is integrálható lesz, az intézmény honlapjába. Fontos elérendő cél volt a
+    főoldalán található összefoglaló, az elérhető tanévekről, amelyből
+    közvetlenül megnyithatóak az adott tanév képei. A galéria oldalról illetve a
+    tanévekre szűrt aloldalakról bármely képre kattintva a szerkesztő ablakba
+    lépve lehet szerkeszteni az adott kép elemeit!
+  </p>
+  <a
+    [routerLink]="['/', 'gallery']"
+    class="btn btn-primary col-4 offset-4 text-center"
+    >A teljes galéria megtekintése</a
+  >
+</div>
+
+<div class="row my-3 py-3 bg-dark">
+  <div class="col-12 col-md-4 col-lg-3" *ngFor="let row of galleryFirstPage">
+    <div class="card my-1 homepage_card">
+      <div class="card-header homepage_card-header">
+        <h4>
+          Iskolaév: <br />
+          {{ row.period }}
+        </h4>
+      </div>
+      <div class="card-body">
+        <div class="card px-0 col-sm-12-md-6-lg-2 mx-auto h-100">
+          <img
+            class="card-img-top"
+            style="height: 250px"
+            [src]="row.path + row.filename"
+            alt="Card image cap"
+          />
+
+          <a
+            (click)="onClick(row.period)"
+            [routerLink]="['/', 'gallery', 'edit', row.period]"
+            class="btn btn-primary"
+            >Képek megtekintése</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

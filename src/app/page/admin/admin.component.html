@@ -2,19 +2,46 @@
   <thead>
     <tr>
       <th>#</th>
-      <th>Filename</th>
-      <th>Path</th>
-      <th>Period</th>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Description</th>
-      <th>Featured</th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('filename')">
+          Filename
+        </button>
+      </th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('path')">Path</button>
+      </th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('period')">Period</button>
+      </th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('title')">Title</button>
+      </th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('date')">Date</button>
+      </th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('description')">
+          Description
+        </button>
+      </th>
+      <th>
+        <button class="btn btn-info" (click)="onClick('featured')">
+          Featured
+        </button>
+      </th>
 
       <th></th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let gallery of galleryList$ | async">
+    <tr
+      *ngFor="
+        let gallery of galleryList$
+          | async
+          | globalfilter: (phrase$ | async)
+          | sort: actualsortparameter:sortedMode
+      "
+    >
       <td>{{ gallery.id }}</td>
       <td>{{ gallery.filename }}</td>
       <td>{{ gallery.path }}</td>
@@ -24,7 +51,16 @@
       <td>{{ gallery.description }}</td>
       <td>{{ gallery.featured }}</td>
 
-      //ide jön a törlés és egyéb gombok//
+      <td>
+        <div class="btn-group">
+          <button
+            [routerLink]="['/gallery/edit', gallery.id]"
+            class="btn btn-info"
+          >
+            <i class="fa fa-edit"></i>
+          </button>
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>

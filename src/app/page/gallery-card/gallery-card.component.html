@@ -1,0 +1,26 @@
+<div class="card mb-3">
+  <div class="card-header text-center">
+    <h4>{{ gallery.title }}</h4>
+  </div>
+  <div class="card-header text-center">{{ gallery.date }}</div>
+  <div class="card-body">
+    <div class="card px-0 movieCard col-sm-12-md-6-lg-2 mx-auto">
+      <img
+        class="card-img-top"
+        style="height: 250px"
+        [src]="gallery.path + gallery.filename"
+        alt="Card image cap"
+      />
+
+      <hr class="m-0 hr" />
+      <p class="card-header text-center mt-3">{{ gallery.filename }}</p>
+      <p class="card-text text-center mt-3">{{ gallery.description }}</p>
+      <div class="row justify-content-center pb-2">
+        <a (click)="raiseEdit()" class="btn btn-primary col-5 mx-2"
+          >Szerkesztés</a
+        >
+        <a (click)="raiseDelete()" class="btn btn-primary col-5 mx-2">Törlés</a>
+      </div>
+    </div>
+  </div>
+</div>
