@@ -1,6 +1,6 @@
 # MuviskGallery indítása:
 
-JSON szervert használok: json-server gallery1\output.json --watch
+JSON szervert használok: json-server server\output.json --watch
 Az angular projekt az npm start paranccsal lehet indítani.
 
 ## A projekt leírása

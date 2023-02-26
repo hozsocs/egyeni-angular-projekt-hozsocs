@@ -11,14 +11,14 @@ import { GalleryItem } from '../model/gallery-item';
 //A BaseService kiterjesztése
 export class GalleryService {
   //felül kell írni a BaseService változóját
-  entityName: string = '';
+  entityName: string = 'gallery';
   apiUrl: string = environment.apiUrl;
   http: HttpClient = inject(HttpClient);
 
   constructor() {}
 
   getAll(): Observable<GalleryItem[]> {
-    return this.http.get<GalleryItem[]>(`${this.apiUrl}`);
+    return this.http.get<GalleryItem[]>(`${this.apiUrl}${this.entityName}`);
   }
 
   get(id: number): Observable<GalleryItem> {

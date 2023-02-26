@@ -1,6 +1,26 @@
+<!-- <nav id="menu">
+  <ul class="links">
+    <li><a href="tanszakok.html">Tanszakok</a></li>
+    <li><a href="nevadonkrol.html">Névadónkról</a></li>
+    <li><a href="documents.html">Dokumentumok</a></li>
+    <li><a href="news.html">Hírek, események</a></li>
+    <li><a href="galery.html">Galéria</a></li>
+    <li><a href="alapitvany.html">Alapítványunk</a></li>
+    <li><a href="aboutus.html">Rólunk</a></li>
+    <li><a href="connect.html">Kapcsolat</a></li>
+  </ul>
+</nav> -->
+<!-- Scripts -->
+<!--<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+ <script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="module" src="../js/main.js"></script> -->
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" routerLink="/">Navbar</a>
+    <a class="navbar-brand text-white" routerLink="/">Kezdőlap</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -31,7 +51,62 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
+          <a class="nav-link text-white" routerLink="/tanszakok">Tanszakok</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-white" routerLink="/nevadonkrol"
+            >Névadónkról</a
+          >
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-white" routerLink="/dokumentumok"
+            >Dokumentumok</a
+          >
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-white" routerLink="/hirek">Hírek</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
           <a class="nav-link text-white" routerLink="/gallery">Galéria</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-white" routerLink="/alapitanyunk"
+            >Alapítványunk</a
+          >
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-white" routerLink="/rolunk">Rólunk</a>
+        </li>
+        <li
+          class="nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link text-white" routerLink="/kapcsolat">KApcsolat</a>
         </li>
         <li
           class="nav-item"
@@ -43,13 +118,13 @@
       </ul>
       <form class="d-flex" role="search">
         <input
-          class="form-control me-2"
+          class="form-control my-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
           [formControl]="phrase"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
       </form>
     </div>
   </div>

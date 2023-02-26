@@ -1,51 +1,393 @@
-<H1>Iskolai galéria oldal</H1>
+<div class="container col-12 m-0 p-0 w-100">
+  <!-- Banner -->
+  <!--
+			To use a video as your background, set data-video to the name of your video without
+			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+			formats to work correctly.
+		-->
+  <section id="banner" data-video="images/banner" class="col-12 m-0 p-0">
+    <div class="inner">
+      <h1>Szabó László Alapfokú Művészeti Iskola Hajdúszoboszló</h1>
+      <!-- <p>A full responsive, business-oriented HTML5/CSS3 template<br />
+        built by <a href="https://templated.co/">Templated</a> and released under the <a href="https://templated.co/license">Creative Commons</a>.</p> -->
+      <a href="#one" class="button special scrolly">Tovább</a>
+    </div>
+  </section>
 
-<div class="col-12 text-justify my-3 pb-3">
-  <h2>A téma bemutatása</h2>
-  <p>
-    Ebben a projektben egy valós felmerült igényt próbálok meg feldolgozni,
-    amelyben egy művészeti iskola évek óta felgyűlt képanyagát rendszerezem és
-    teszem szerkeszthetővé. A feldolgozás során első sorban a feladat leírás
-    paramétereit követtem, de terveim szerint néhány változtatással a valóságban
-    is integrálható lesz, az intézmény honlapjába. Fontos elérendő cél volt a
-    főoldalán található összefoglaló, az elérhető tanévekről, amelyből
-    közvetlenül megnyithatóak az adott tanév képei. A galéria oldalról illetve a
-    tanévekre szűrt aloldalakról bármely képre kattintva a szerkesztő ablakba
-    lépve lehet szerkeszteni az adott kép elemeit!
-  </p>
-  <a
-    [routerLink]="['/', 'gallery']"
-    class="btn btn-primary col-4 offset-4 text-center"
-    >A teljes galéria megtekintése</a
-  >
-</div>
-
-<div class="row my-3 py-3 bg-dark">
-  <div class="col-12 col-md-4 col-lg-3" *ngFor="let row of galleryFirstPage">
-    <div class="card my-1 homepage_card">
-      <div class="card-header homepage_card-header">
-        <h4>
-          Iskolaév: <br />
-          {{ row.period }}
-        </h4>
-      </div>
-      <div class="card-body">
-        <div class="card px-0 col-sm-12-md-6-lg-2 mx-auto h-100">
-          <img
-            class="card-img-top"
-            style="height: 250px"
-            [src]="row.path + row.filename"
-            alt="Card image cap"
-          />
-
-          <a
-            (click)="onClick(row.period)"
-            [routerLink]="['/', 'gallery', 'edit', row.period]"
-            class="btn btn-primary"
-            >Képek megtekintése</a
-          >
+  <!-- One -->
+  <section id="one" class="wrapper style2">
+    <div class="inner">
+      <div>
+        <div class="box">
+          <div class="image fit">
+            <img src="assets/images/Modern_tanc_banner.webp" alt="" />
+          </div>
+          <div class="content">
+            <header class="align-center">
+              <h2>Rólunk</h2>
+              <p>A Szabó László Alapfokú Művészeti Iskola története</p>
+            </header>
+            <hr />
+            <p class="center">
+              A Szabó László Alapfokú Művészeti Iskola 2001. szeptemberben
+              alakult Hajdúszoboszlón. Ez az intézmény a város egyetlen
+              alapítványi fenntartású iskolája, amelyben alapfokú
+              művészetoktatás folyik. Az alapítást az a társadalmi igény
+              határozta meg, hogy a város hagyományos zeneiskolája mellett
+              legyenek más művészeti ágak is képviselve. Tanulhassanak a
+              gyerekek képzőművészetet és táncot is. Ebben az iskolatípusban a
+              tankötelezettség nem teljesíthető, viszont kiváló színtere a
+              tehetséggondozásnak. Alkalmas arra, hogy a gyerekek a művészetek
+              valamelyik választott területén jobban elmélyedjenek, plusz
+              tudást, ismereteket, képességeket szerezzenek, ami majd pozitívan
+              befolyásolja a további életüket. Ha a kezdetektől értékelnénk az
+              iskola vállalt szerepét a városban, akkor el lehet mondani, hogy
+              egy hiánypótló szerepet töltünk be, Hajdúszoboszló kulturális
+              életének aktív szereplőivé váltunk. Az iskola névválasztásánál
+              azért esett a legtöbb szavazat Szabó Lászlóra, mert életének nagy
+              részében itt alkotott. Szobrászata, művészeti elgondolásai,
+              tehetsége ismertté tette az egész világon. Munkássága, művészi
+              hitvallása, hazaszeretete példaértékű lehet a tanítványaink
+              számára.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Two -->
+  <section id="two" class="wrapper style3">
+    <div class="inner">
+      <div id="flexgrid">
+        <div>
+          <header class="style3__header">
+            <h3>Képző-és iparművészeti ág: Képzőművészet</h3>
+          </header>
+          <p>
+            Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna
+            a ullamcorper laoreet, lectus arcu
+          </p>
+          <ul class="actions">
+            <li>
+              <a href="" class="button alt">Tovább</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <header class="style3__header">
+            <h3>Képző-és iparművészeti ág: Grafika és festészet</h3>
+          </header>
+          <p>
+            Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna
+            a ullamcorper laoreet, lectus arcu
+          </p>
+          <ul class="actions">
+            <li>
+              <a href="" class="button alt">Tovább</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <header class="style3__header">
+            <h3>Táncművészeti ág: Néptánc</h3>
+          </header>
+          <p>
+            Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam
+            leo, nec dapibus tortor nibh sed
+          </p>
+          <ul class="actions">
+            <li>
+              <a href="" class="button alt">Tovább</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <header class="style3__header">
+            <h3>Táncművészeti ág: moderntánc</h3>
+          </header>
+          <p>
+            Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam
+            sit amet mi ullamcorper vehicula.
+          </p>
+          <ul class="actions">
+            <li>
+              <a href="" class="button alt">Tovább</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hírek, események -->
+  <section id="three" class="wrapper style2">
+    <div class="inner container text-center">
+      <div class="row" *ngIf="newsList$">
+
+        <div class="col-6 img-fluid" *ngFor="let news of newsList$ |async |two:newsindex">
+
+          <app-news-card [news]="news"></app-news-card>
+        </div>
+
+      <div class="row">
+        <div class="col-6 d-flex justify-content-center" >
+
+          <a (click)="onMoveLeftClick()" href="#one" class="button special scrolly" id="moveleft">Előző</a>
+
+        </div>
+        <div class="col-6 d-flex justify-content-center" >
+
+          <a (click)="onMoveRightClick()" href="#one" class="button special scrolly" id="moveright">Következő</a>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Four -->
+  <section id="four" class="wrapper style3">
+    <div class="inner">
+      <header class="align-center">
+        <h2>Névadónkról</h2>
+        <p class="center">
+          SZABÓ LÁSZLÓ / 1917-1984 / Szobrászművész. Debrecenben született 1917.
+          szeptember 8-án. Édesapja Szabó László gazdálkodó, anyja Bodnár
+          Eszter. Szabó László tizennégy éves koráig Hajdúszoboszlón, majd
+          Debrecenben élt, és ott is érettségizett le. 1940 és 1943 között jogot
+          tanult a debreceni egyetemen. Amikor behívták katonai szolgálatra,
+          néhány hónap után úgy döntött, megszökik. Balatonföldváron
+          rejtőzködött, ahol úszómester volt. Miközben maga is veszélyben volt,
+          lengyel menekülteket is bújtatott. Kalandos körülmények között jutott
+          Svájcba, még a Rajnát is átúszta Bázelnél. Egy üldözött gyerekeket
+          befogadó táborban lett nevelő, és ekkor kezdett köveket faragni. A
+          háború után Genfben, majd Lausanne-ban folytatta Debrecenben
+          félbeszakított jogi tanulmányait. Érdeklődése azonban egyre inkább a
+          művészetek felé fordult. Az egyetemi órák után festmények, szobrok
+          tanulmányozásával töltötte idejét. Első domborműve alapján 1947-ben
+          ösztöndíjat kapott a párizsi Szépművészeti Akadémiára, ahová azonnal
+          harmadévesnek vették fel, és egy esztendő elteltével már diplomát is
+          kapott. A beauvais-i gótikus Szent Péter-katedrális helyreállítási
+          munkáin dolgozott kőfaragóként. Mivel pénze nem sok volt, a
+          katedrálisban lakott. 1949-ben részt vett a Salon de la Jeune
+          Sculpture-ön, 1951-ben a Salon des Réalités Nouvelles-en.
+        </p>
+        <a href="nevadonkrol.html" class="button special scrolly">Tovább</a>
+      </header>
+    </div>
+  </section>
+
+  <!-- Tanárok -->
+  <section id="tanarok" class="wrapper style2">
+    <div class="inner">
+      <div class="box">
+        <!-- <div class="image fit">
+          <img src="../../../assets/images/Modern_tanc_banner.webp" alt="" />
+        </div> -->
+        <div class="content">
+          <header class="align-center">
+            <h2>Tanáraink</h2>
+          </header>
+        </div>
+        <hr />
+
+        <div class="tanarok__container box">
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/Aniko.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Szoboszlainé Kádár Anikó</H4>
+              intézményvezető, közoktatásvezető, <br />
+              mesterpedagógus, <br />földrajz-rajz szakos tanár
+            </div>
+          </div>
+
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/Csilla.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Kokas Csilla</H4>
+              intézményvezető helyettes, <br />
+              közoktatásvezető,<br />matematika-rajz szakos tanár
+            </div>
+          </div>
+
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/Imre.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Nagy Imre</H4>
+              néptánc tanár
+            </div>
+          </div>
+
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/csaba.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Horváth Csaba</H4>
+              moderntánc tanár
+            </div>
+          </div>
+
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/Zsuzsi.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Darnainé Komiszár Zsuzsanna</H4>
+              moderntánc tanár
+            </div>
+          </div>
+
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/Marika.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Tokaji Mária</H4>
+              földrajz-rajz szakos tanár
+            </div>
+          </div>
+
+          <div class="tanarok__item">
+            <div class="person">
+              <img src="assets/teachers/Noemi.webp" alt="Person 4" />
+            </div>
+            <div>
+              <H4>Csige Noémi</H4>
+              iskolatitkár - gazdasági ügyintéző
+            </div>
+          </div>
+          <div class="tanarok__item">
+            <div class="person"><img src="" alt="" /></div>
+            <div>
+              <H4></H4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galéria -->
+  <section id="galeria" class="wrapper style2">
+    <div class="inner">
+      <div>
+        <div class="box">
+          <!--<div class="image fit">
+            <img src="assets/images/Modern_tanc_banner.webp" alt="" />
+          </div> -->
+          <div class="content">
+            <header class="align-center">
+              <h2>Galéria</h2>
+            </header>
+            <hr />
+
+            <div class="row">
+              <div
+                class="col-12 col-md-4 col-lg-3"
+                *ngFor="let row of galleryFirstPage"
+              >
+                <div class="card homepage_card">
+                  <div class="card-header homepage_card-header">
+                    <h4>
+                      Iskolaév: <br />
+                      {{ row.period }}
+                    </h4>
+                    <hr />
+                  </div>
+                  <div class="card-body">
+                    <div class="card px-3 col-sm-12-md-6-lg-2 mx-auto">
+                      <img
+                        class="card-img-top"
+                        style="height: 250px"
+                        [src]="row.path + row.filename"
+                        alt="Card image cap"
+                      />
+
+                      <a
+                        (click)="onClick(row.period)"
+                        [routerLink]="['/', 'gallery', 'edit', row.period]"
+                        class="mt-2 button special scrolly"
+                        >Képek megtekintése</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="align-center">
+            <a [routerLink]="['/', 'gallery']" class="button special scrolly"
+              >A teljes galéria</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <section id="two" class="wrapper style3">
+      <div class="inner">
+        <div id="flexgrid1">
+          <div>
+            <header>
+              <h3>Menük</h3>
+            </header>
+            <nav id="footer__menu">
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tanszakok.html">Tanszakok</a></li>
+                <li><a href="nevadonkrol.html">Névadónkról</a></li>
+                <li><a href="documents.html">Dokumentumok</a></li>
+                <li><a href="news.html">Hírek, események</a></li>
+                <li><a href="galery.html">Galéria</a></li>
+                <li><a href="alapitvany.html">Alapítványunk</a></li>
+                <li><a href="aboutus.html">Rólunk</a></li>
+                <li><a href="connect.html">Kapcsolat</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="footer__linklist"></div>
+          <div>
+            <header>
+              <h3>Elérhetőségek</h3>
+            </header>
+            <p class="footer__p">
+              <strong>Cím:</strong> 4200 Hajdúszoboszló, Arany János u. 2.
+            </p>
+            <p class="footer__p"><strong>Tel:</strong> 0652 271-186</p>
+            <p class="footer__p"><strong>OM:</strong> 200034</p>
+            <p class="footer__p"><strong>Adószám:</strong> 18562934-1-09</p>
+            <p class="footer__p">
+              <strong>Email:</strong> szabomuvisk@gmail.com
+            </p>
+            <p class="footer__p">
+              <strong>Fenntartó:</strong> Gyermekeinkért-Jövőnkért Alapítvány
+            </p>
+            <ul class="actions">
+              <li><a href="#" class="button alt">Learn More</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="module" src="../js/main.js"></script>
 </div>

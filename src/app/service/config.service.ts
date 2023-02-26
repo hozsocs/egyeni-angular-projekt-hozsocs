@@ -69,6 +69,7 @@ export class ConfigService {
     {
       label: 'Path',
       key: 'path',
+
       validators: [
         Validators.required,
         Validators.pattern(/^(..\/assets\/gallery1\/)([A-Űa-ű0-9-]+[\/])+$/),

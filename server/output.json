@@ -1,4 +1,120 @@
 {
+  "news": [
+    {
+      "id": "1",
+      "date": "2022.08.21",
+      "title": "Jelentkezési lap",
+      "title2": "Tisztelt Szülők, Kedves gyerekek!",
+      "category": "news",
+      "header": "assets/images/Webp/tanchaz3.webp",
+      "picture": "",
+      "link": "doc/Jelentkezesi_lap_202222023.pdf",
+      "linktext": "Jelentkezési lap",
+      "texthtml": "A 2022/2023 tanév jelentkezési lapja az alábbi linkről letölthető."
+    },
+
+    {
+      "id": "2",
+      "date": "2022.09.01",
+      "title": "Tanévnyitó",
+      "title2": "Tisztelt Szülők!",
+      "category": "events",
+      "header": "",
+      "picture": "",
+      "link": "",
+      "linktext": "",
+      "texthtml": "Tanévnyitó: 2022. szeptember 5. (hétfő) 17 óra:  nagy ének terem <br> A tanévnyitón lehetőség van a jelentkezési lapok és a bizonyítványok leadására. <br> A 2022/23-as tanévben a térítési díj egy félévre 15.000 Ft/fő/tanszak, minden további tanszak tandíjköteles, melynek összege egy félévre 10.000 Ft./fő/tanszak. A 2022. szeptember 1-ig 6. életévüket betöltött óvodások illetve más művészeti iskolába is járó gyerekek nálunk tandíj fizetésre kötelezettek, melynek összege 20.000 Ft./fő/félév. Minden esetben ingyenes a hátrányos helyzetű tanuló részére az első alapfokú művészetoktatásban való részvétel. A hátrányos helyzet fennállását igazoló határozatot a jelentkezési laphoz csatolni kell. A térítési és tandíjak befizetésének határideje ebben a félévben 2022. október 1.<br> Befizetési lehetőségek: készpénzben az iskola irodájában vagy átutalással az alábbi bankszámlaszámra:<br> Szabó László Alapfokú Művészeti Iskola<br> OTP BANK: 11738084-20024080<br> Közleményben csak a gyermek nevét tüntessék fel!<br>"
+    },
+
+    {
+      "id": "3",
+      "date": "2022.10.10",
+      "title": "Meghívó 20. évforduló alkalmából ",
+      "title2": "",
+      "category": "events",
+      "header": "",
+      "picture": "assets/images/plakát.jpg",
+      "link": "",
+      "linktext": "",
+      "texthtml": ""
+    },
+
+    {
+      "id": "4",
+      "date": "2022.12.14",
+      "title": "Hangolódás a télre és a közelgő ünnepekre ",
+      "title2": "",
+      "category": "news",
+      "header": "assets/images/Webp/2022/Hangolodas_a_telre/header.jpg",
+      "picture": "assets/images/Webp/2022/Hangolodas_a_telre/Hangolodas_a_telre_08.webp",
+      "link": "",
+      "linktext": "",
+      "texthtml": "<img src='images/Webp/2022/Hangolodas_a_telre/Hangolodas_a_telre_04.webp' alt='Hangolodas_a_telre_02'>"
+    },
+
+    {
+      "id": "5",
+      "date": "2022.12.15",
+      "title": "Karácsonyi jókívánságok ",
+      "title2": "",
+      "category": "news",
+      "header": "assets/images/Webp/2022/Karacsony/header.webp",
+      "picture": "assets/images/Webp/2022/Karacsony/Karacsony2022.webp",
+      "link": "",
+      "linktext": "",
+      "texthtml": ""
+    },
+
+    {
+      "id": "6",
+      "date": "2023.01.05",
+      "title": "Rajzpályázat",
+      "title2": "A Debreceni Állatkert kiírásában",
+      "category": "news",
+      "header": "",
+      "picture": "assets/images/Webp/2023/01/Allatkert_rajzpalyazat.jpg",
+      "link": "",
+      "linktext": "",
+      "texthtml": "Az Állatok Világhete alkalmából a Debreceni Állatkert országos rajzpályázatán Széll Noémi alsó tagozatos kategóriában első helyezést ért el. Jutalma egy éves állatkerti családi belépő. </br> <i>Felkészítő tanára: Szoboszlainé Kádár Anikó</i>"
+    },
+    {
+      "id": "7",
+      "date": "2022.12.08",
+      "title": "Rajzpályázat",
+      "title2": "A madarakról és a szabadságról",
+      "category": "news",
+      "header": "",
+      "picture": "assets/images/Webp/2022/12/a_madarakrol_es_a_szabadsagrol.webp",
+      "link": "",
+      "linktext": "",
+      "texthtml": "Tanítványaink legújabb országos rajzpályázati sikerei..."
+    },
+    {
+      "id": "8",
+      "date": "2023.01.18",
+      "title": "Rajzpályázat",
+      "title2": "Az Erdő télen",
+      "category": "news",
+      "header": "",
+      "picture": "assets/images/Webp/2023/01/Orszagos_vadaszkamara.webp",
+      "link": "",
+      "linktext": "",
+      "texthtml": "Az Országos Magyar Vadászkamara Szabolcs-Szatmár-Bereg Vármegyei Területi Szervezete által szervezett az Erdő télen rajzpályázaton kiváló eredményeket értek el tanulóink. A rajzpályázat az egész Kárpát-medence országainak szólt, több mint 1800 alkotás közül lettek kiválasztva az általános iskolák évfolyamaiból a legtehetségesebbek.</br> I. heyezés - arany kupa: Tóth Ábel Bánk</br>I. helyezés- arany kupa: Tóth Angyalka </br> <i>Felkészítő tanáruk: Szoboszlainé Kádár Anikó </i></br>II. helyezés- ezüst kupa: Zahorján Anna </br> <i>Felkészítő tanára: Tokaji Mária</i>"
+    },
+    {
+      "id": "9",
+      "date": "2023.01.30",
+      "title": "Rajzverseny",
+      "title2": "Pocsajon",
+      "category": "news",
+      "header": "",
+      "picture": "assets/images/Webp/2023/01/Pocsaji_rajzverseny.webp",
+      "link": "",
+      "linktext": "",
+      "texthtml": "A Pocsaji Lorántffy Zsuzsanna Általános Iskola  'Karácsonyi varázslat' című rajzversenyen iskolánkból Ungai Csaba 2. helyezést, Albert Iringó 3. helyezést ér el. <br><i>Felkészítő tanáruk: Szoboszlainé Kádár Anikó</i>"
+    }
+  ],
+
   "gallery": [
     {
       "id": 0,
@@ -49578,6 +49694,18 @@
     },
     {
       "id": 9735
+    },
+    {
+      "id": 9736
+    },
+    {
+      "id": 9737
+    },
+    {
+      "id": 9738
+    },
+    {
+      "id": 9739
     }
   ]
 }

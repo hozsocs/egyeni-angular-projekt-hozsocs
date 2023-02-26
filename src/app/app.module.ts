@@ -18,6 +18,9 @@ import { FeaturedPipe } from './pipe/featured.pipe';
 import { PeriodgalleryComponent } from './page/periodgallery/periodgallery.component';
 import { GlobalfilterPipe } from './pipe/globalfilter.pipe';
 import { SortPipe } from './pipe/sort.pipe';
+import { NewsComponent } from './page/news/news.component';
+import { NewsCardComponent } from './page/news-card/news-card.component';
+import { TwoPipe } from './pipe/two.pipe';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { SortPipe } from './pipe/sort.pipe';
     PeriodgalleryComponent,
     GlobalfilterPipe,
     SortPipe,
+    NewsComponent,
+    NewsCardComponent,
+    TwoPipe,
   ],
   imports: [
     BrowserModule,
